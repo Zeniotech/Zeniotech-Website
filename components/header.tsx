@@ -1,6 +1,6 @@
-import React from 'react'
 import Image from 'next/image'
 import logo from '@/public/logo.png'
+import Link from 'next/link'
 
 const header = () => {
   return (
@@ -12,10 +12,10 @@ const header = () => {
       </ul>
     </div>
     <ul className='flex justify-between'>
-      <li className='my-7.5'>Home</li>
-      <li className='mx-5 my-7.5'>Services</li>
-      <li className='my-7.5'>About Us</li>
-      <li><button className = "mx-8 border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-50 my-3"> Contact Us</button></li>
+      <Link href='/'><li className='my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5'>Home</li></Link>
+      <Link href='/our-services'><li className='my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5'>Services</li></Link>
+      <Link href='/about-us'><li className='my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5'>About Us</li></Link>
+      <Link href='/contact-us'><li><button className = "mx-8 border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-50 my-5 hover:bg-[#A41622] cursor-pointer"> Contact Us</button></li></Link>
     </ul>
   </div>
   )
