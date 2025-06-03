@@ -7,8 +7,8 @@ const header = () => {
     <div className = "bg-[#1A365D] text-white justify-between flex">
     <div> 
       <ul className = "flex">
-        <li className='my-1/2'><Image src ={logo} alt ="logo" width={80} height={80}></Image></li>
-        <li className ="mx-1/2 my-7.5">Zeniotech</li>
+        <Link href='/'><li className='my-1/2'><Image src ={logo} alt ="logo" width={80} height={80}></Image></li></Link>
+        <Link href='/'><li className='my-1/2'></li><li className ="mx-1/2 my-7.5">Zeniotech</li></Link>
       </ul>
     </div>
     <ul className='flex justify-between'>
