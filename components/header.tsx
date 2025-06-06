@@ -7,13 +7,16 @@ import hamburger from "@/public/hamburger.svg";
 import { useState } from "react";
 
 const header = () => {
-    const[isOpen,setIsOpen] = useState(false);
+    const[openDropdown,setOpenDropDown] = useState(false);
+    const[openHamburger,setOpenHamburger] = useState(false);
   return (
     <div className="h-25">
       <div className="bg-[#1A365D] text-white justify-between flex">
         <div>
           <div className="flex">
-            <div>
+            <div
+            onClick={()=>setOpenHamburger(!openHamburger)}
+            >
               <Image
                 src={hamburger}
                 alt="hamburger"
@@ -48,14 +51,14 @@ const header = () => {
             </li>
           </Link>
           <div className="group">
-          <div onMouseEnter={ () => setIsOpen(!isOpen)}
-               onMouseLeave={ () => setIsOpen(false)}           
+          <div onMouseEnter={ () => setOpenDropDown(true)}
+               onMouseLeave={ () => setOpenDropDown(false)}           
               >
-          {/* <Link href="/our-services"> */}
+          <Link href="/our-services">
             <li className="hidden lg:block my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5 group cursor-pointer">
               Services
             </li>
-          {/* </Link> */}
+          </Link>
           </div>
           </div>
           <Link href="/about-us">
@@ -73,7 +76,7 @@ const header = () => {
         </ul>
       </div>
 
-      {isOpen && (
+      {openDropdown && (
      <div className=" h-60 py-7 w-80 rounded-2xl  bg-[#7B61FF] flex justify-self-end mx-32 my-[-18] group-hover:opacity-100"
      >
      <div className="  rounded-3xl justify-around ">
@@ -96,9 +99,19 @@ const header = () => {
       </div>
      )
     }
+{openHamburger && (
+<div className="h-screen bg-[#7B61FF] opacity-100 relative">
+  <div className="relative text-center">
+  <ul className = 'text-white'>
+    <li className = 'h-20 text-4xl'>Home</li>
+    <li className = 'h-20 text-4xl'>Services</li>
+    <li className = 'h-20 text-4xl'>About Us</li>
+    <li><button className = "border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-70 my-5 hover:bg-[#A41622] cursor-pointer text-4xl shadow-2xl">Contact Us</button></li>
+  </ul>
+  </div>
+</div>)}
     </div>
   );
 };
 
 export default header;
-
