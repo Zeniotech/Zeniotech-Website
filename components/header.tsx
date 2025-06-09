@@ -50,16 +50,13 @@ const header = () => {
               Home
             </li>
           </Link>
-          <div className="group">
           <div onMouseEnter={ () => setOpenDropDown(true)}
-               onMouseLeave={ () => setOpenDropDown(false)}           
-              >
+               onMouseLeave={ () => setOpenDropDown(false)}>
           <Link href="/our-services">
             <li className="hidden lg:block my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5 group cursor-pointer">
               Services
             </li>
           </Link>
-          </div>
           </div>
           <Link href="/about-us">
             <li className="hidden lg:block my-7.5 hover:bg-[#7B61FF] rounded-2xl w-20 h-10 text-center py-1.5">
@@ -76,10 +73,11 @@ const header = () => {
         </ul>
       </div>
 
-      {openDropdown && (
-     <div className=" h-60 py-7 w-80 rounded-2xl  bg-[#7B61FF] flex justify-self-end mx-32 my-[-18] group-hover:opacity-100"
+      {openDropdown && (  
+     <div className="hover:visible h-60 py-7 w-80 rounded-2xl  bg-[#7B61FF] flex justify-self-end mx-32 my-[-18] group-hover:opacity-100"
      >
-     <div className="  rounded-3xl justify-around ">
+      
+     <div className="  rounded-3xl justify-around">
           <Link href="/">
             <li className="py-1 text-white px-11 rounded-2xl mx-16 bg-[#1A365D] ">
               Home
@@ -100,7 +98,8 @@ const header = () => {
      )
     }
 {openHamburger && (
-<div className="h-screen bg-[#7B61FF] opacity-100 relative">
+  
+<div className="h-screen bg-[#7B61FF] relative">
   <div className="relative text-center">
   <ul className = 'text-white'>
     <li className = 'h-20 text-4xl'>Home</li>
@@ -115,3 +114,10 @@ const header = () => {
 };
 
 export default header;
+
+
+
+
+
+
+
