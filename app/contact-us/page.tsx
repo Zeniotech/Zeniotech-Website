@@ -5,11 +5,11 @@ import contact from '@/public/contact-us-image.png'
 
 const contactUs = () => {
   return (
-    <div className="w-screen h-200 bg-gradient-to-b from-slate-200 to-blue-800">
-     <div className='text-7xl mx-auto text-center font-bold'>Questions? Ideas? Let's shape them today</div>
-     <div className='text-5xl mx-auto text-center'>Tomorrow’s Too Late to Begin</div>
+    <div className="w-screen h-250 bg-gradient-to-b from-slate-200 to-blue-800">
+     <div className='text-7xl mx-auto text-center font-bold py-10'>Questions? Ideas? Let's shape them today</div>
+     <div className='text-5xl mx-auto text-center py-10'>Tomorrow’s Too Late to Begin</div>
      
-<div className='flex mx-auto justify-center max-w-400'>
+<div className='flex mx-auto justify-center max-w-400 py-10'>
  
 <Image src={contact} alt="hamburger" className="rounded-2xl"></Image>
 
@@ -35,7 +35,7 @@ const contactUs = () => {
   </button>
      </Form>
      </div>
-     
+     <div className='bg-[#FF4757] h-35 w-screen'></div>
     </div>
   )
 }
