@@ -8,7 +8,6 @@ const contactUs = () => {
     <div className="w-screen h-250 bg-gradient-to-b from-slate-200 to-blue-800">
      <div className='text-7xl mx-auto text-center font-bold py-10'>Questions? Ideas? Let's shape them today</div>
      <div className='text-5xl mx-auto text-center py-10'>Tomorrow’s Too Late to Begin</div>
-     
 <div className='flex mx-auto justify-center max-w-400 py-10'>
  
 <Image src={contact} alt="hamburger" className="rounded-2xl"></Image>
