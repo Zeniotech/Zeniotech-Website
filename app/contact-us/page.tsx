@@ -15,7 +15,7 @@ const contactUs = () => {
  
 <Image src={contact} alt="hamburger" className="rounded-2xl"></Image>
 
-<Form className="max-w-100 px-3  bg-white rounded-2xl" action={"/submit"}>
+<Form className="max-w-100 px-3 py-8 bg-white rounded-2xl" action={"/submit"}>
   <div className="mb-5 flex flex-col gap-2">
     <label className='text-black'>First Name</label>
     <input type="text" id="email" className=" border-2" />
@@ -32,7 +32,7 @@ const contactUs = () => {
     <label className="mb-2 text-gray-900">Your Query</label>
     <input type="password" className='border-2'/>
   </div>
-  <button className="mx-20 border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-50 my-5 hover:bg-[#A41622] cursor-pointer">
+  <button className="mx-20 border-2 border-[#767676] bg-black py-4 rounded-2xl w-50 my-5 hover:bg-[#FF4757] cursor-pointer text-white">
         Contact Us
   </button>
      </Form>
