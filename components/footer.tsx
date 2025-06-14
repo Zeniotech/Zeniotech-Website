@@ -4,7 +4,7 @@ import logo from "@/public/logo.png";
 
 const footer = () => {
   return (
-<div className = 'bg-[#1A365D] h-100 w-screen'>
+<div className = 'bg-[#1A365D] h-120 w-screen'>
 <div className = 'flex justify-around'>
 <div className = 'h-100 w-100'>
 <div className='my-20'>
@@ -15,8 +15,8 @@ const footer = () => {
 </div>
 <div className='text-white text-2xl text-left -my-20 font-bold'>"empowering excellence through innovative solution"</div>
 </div>
-<div className = 'h-100 w-100'>
-  <div className='text-3xl text-white font-bold py-5'>Our Core Services</div>
+<div className = 'h-100 w-100 hidden lg:block md:block'>
+  <div className='text-3xl text-white font-bold  py-10'>Our Core Services</div>
   <ul className='text-left text-xl text-white py-0.5 justify-around'>
     <li>Servicenow</li>
     <li>Custom Application</li>
@@ -28,7 +28,7 @@ const footer = () => {
   </ul>
 </div>
 <div className = 'h-100 w-100'>
-<div className='text-3xl text-white font-bold py-5'>Contact Us</div>
+<div className='text-3xl text-white font-bold py-10'>Contact Us</div>
   <div>
     <ul className='text-white text-2xl'>
       <li>📩Sharmaabhinay28@zeniotech.com</li>
