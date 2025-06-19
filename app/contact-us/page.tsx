@@ -11,7 +11,7 @@ const contactUs = () => {
       <div className='text-6xl font-bold '>Questions? Ideas? Let's shape them today</div>
      <div className='text-5xl'>Tomorrow’s Too Late to Begin</div>
       </div>
-<div className='flex mx-auto justify-center max-w-400 py-10'>
+    <div className='flex mx-auto justify-center max-w-400 py-10'>
  
 <Image src={contact} alt="hamburger" className="rounded-2xl"></Image>
 
