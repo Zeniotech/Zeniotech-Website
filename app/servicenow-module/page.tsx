@@ -4,7 +4,7 @@ import SnowCard from '@/components/snow-card'
 const servicenowPage = () => {
   return (
     <div>
-      <div className='grid grid-cols-3 gap-5 my-8 content-around'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-8 content-around'>
       <SnowCard
        data = {{heading : 'ITSM',
          subText: 'Transform IT with ServiceNow ITSM: Predictive AI, cloud workflows, Service Analytics unify tools, Virtual Agent, Mobile App, scalable workflows.',

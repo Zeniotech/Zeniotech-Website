@@ -3,7 +3,7 @@ import React from 'react'
 const snowCard = ({data} : {data:any}) => {
   return (
     <div>
-      <div className='bg-[#A07EB9] h-90 w-110 rounded-4xl py-5'>
+      <div className='bg-[#A07EB9] h-90 w-110 rounded-4xl py-5 mx-auto'>
         <div className="bg-[#1A365D] h-75 w-95 rounded-3xl mx-5 py-3 px-3">
           <div className="bg-white w-30 h-10 text-4xl text-center">{data.heading}</div>
           <div className="h-25 my-5 text-white">{data.subText}</div>
