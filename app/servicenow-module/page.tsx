@@ -44,7 +44,7 @@ const servicenowPage = () => {
          feature2:'Integration',
          feature3:'Vulnerbility response',
          feature4:'Threat Intelligence',
-        //  feature5:null
+         feature5:''
        }}/>
 
 
@@ -99,9 +99,9 @@ const servicenowPage = () => {
          subText: 'Build Apps on ServiceNow: App Engine, Studio empower low/pro-code workflows, IntegrationHub, secure enterprise agility.',
          feature1:'Customized Solution',
          feature2:'Knowledge',
-        //  feature3:'',
-        //  feature4:'',
-        //  feature5:''
+         feature3:'',
+         feature4:'',
+         feature5:''
        }}/>
 
        </div>

@@ -11,11 +11,11 @@ const snowCard = ({data} : {data:any}) => {
             <div className="flex flex-wrap gap-2">
               <div className="w-auto bg-white rounded-3xl px-1">{data.feature1}</div>
               <div className="w-auto bg-white rounded-3xl px-1">{data.feature2}</div>
-              {data.feature3 != ''&& <div className="w-auto bg-white rounded-3xl px-1">{data.feature3}</div>}
+              {data.feature3 !== '' && (<div className="w-auto bg-white rounded-3xl px-1">{data.feature3}</div>)}
             </div>
             <div className="flex flex-wrap gap-2">
-              {data.feature4 != '' && <div className="w-auto bg-white rounded-3xl px-1">{data.feature4}</div>}
-              {data.feature5 != '' && <div className="w-auto bg-white rounded-3xl px-1">{data.feature5}</div>}
+              {data.feature4 !== '' && (<div className="w-auto bg-white rounded-3xl px-1">{data.feature4}</div>)}
+              {data.feature5 !== '' && (<div className="w-auto bg-white rounded-3xl px-1">{data.feature5}</div>)}
             </div>
           </div>
         </div>
