@@ -2,9 +2,9 @@
 
   export default function Home() {
     return (
-    <>
+    <div>
       <header />
       <div> hello test</div>
-      </>
+      </div>
     );
   }
