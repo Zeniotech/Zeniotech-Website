@@ -1,6 +1,6 @@
 import React from 'react'
 
-const serviceCard = ({heading}) => {
+const serviceCard = ({heading} : {heading:any}) => {
   return (
     <div>
   <div className='w-50 h-105 border-1 rounded-3xl'>
