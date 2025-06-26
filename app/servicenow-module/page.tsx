@@ -1,9 +1,20 @@
 import React from 'react'
 import SnowCard from '@/components/snow-card'
+import snowModuleBannerImage from '@/public/servicenow-page-banner-image-test.png'
+import Image from 'next/image'
+import ContactUsBanner from '@/components/contact-us-banner'
 
 const servicenowPage = () => {
   return (
     <div>
+
+      <div>
+      <Image
+      src={snowModuleBannerImage}
+      alt = 'servicenow banner image'
+      className='h-70 w-screen'
+     />
+     </div>
       <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-8 content-around'>
       <SnowCard
        data = {{heading : 'ITSM',
@@ -105,6 +116,9 @@ const servicenowPage = () => {
        }}/>
 
        </div>
+     
+      <ContactUsBanner />
+
     </div>
   )
 }
