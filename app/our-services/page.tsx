@@ -17,12 +17,12 @@ const ourServices = () => {
       </div>
       </div>
  
-      <div className='bg-[#F5F5F5] h-20 my-[-10]'>
-
+      <div className='bg-[#F5F5F5] h-20'>
+        test123
       </div>
 
       </div>
-      <div className='flex flex-row justify-around'>
+      <div className='flex flex-row justify-around my-15 w-screen'>
         <ServiceCard
           heading={{
             heading: 'Seamless Integration',
@@ -30,7 +30,7 @@ const ourServices = () => {
           }} />
         <ServiceCard
           heading={{
-            heading: 'ServiceNow',
+            heading: 'ServiceNow Implementation',
             subText: 'Expert ServiceNow implementation services that streamline workflows, accelerate digital transformation, and maximize ROI through tailored platform customization, integration, and optimization.'
           }} />
 
