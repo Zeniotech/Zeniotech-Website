@@ -13,12 +13,12 @@ const ourServices = () => {
       <div>
       <div className='bg-[#1A365D] h-48 w-screen'>
         <div className='h-48 flex flex-col justify-center items-center'>
-         <div className='bg-white h-20 w-100 rounded text-black font-bold text-6xl text-center'>Our Services</div>
+         <div className='bg-white h-20 w-100 rounded-2xl text-black font-bold text-6xl text-center'>Our Services</div>
       </div>
       </div>
  
-      <div className='bg-[#F5F5F5] h-20'>
-        test123
+      <div className='bg-[#F5F5F5] h-20 my-[-40] mx-18 text-3xl font-bold text-center underline py-5 rounded-2xl'>
+        Secure, Scalable Tech for Future-Ready Enterprises
       </div>
 
       </div>
@@ -28,6 +28,7 @@ const ourServices = () => {
             heading: 'Seamless Integration',
             subText: 'Seamless integrations that unify systems, eliminate data silos, and supercharge efficiency with scalable, API-driven connectivity for future-ready businesses.'
           }} />
+
         <ServiceCard
           heading={{
             heading: 'ServiceNow Implementation',
@@ -39,6 +40,7 @@ const ourServices = () => {
             heading: 'Custom Solutions',
             subText: 'Custom development solutions that empower your business with agile, scalable software engineered to solve unique challenges, streamline operations, and accelerate digital transformation.'
           }} />
+          
       </div>
       <div>
         <ContactUsBanner />
