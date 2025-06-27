@@ -13,7 +13,7 @@ const ourServices = () => {
       <div>
       <div className='bg-[#1A365D] h-48 w-screen'>
         <div className='h-48 flex flex-col justify-center items-center'>
-         <div className='bg-white h-20 w-100 rounded-2xl text-black font-bold text-6xl text-center'>Our Services</div>
+         <div className='bg-white h-20 w-130 rounded-2xl text-black font-bold text-7xl text-center'>Our Services</div>
       </div>
       </div>
  

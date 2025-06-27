@@ -65,7 +65,7 @@ const header = () => {
           </Link>
           <Link href="/contact-us">
             <li>
-              <button className=" mx-8 border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-50 my-5 hover:bg-[#A41622] cursor-pointer">
+              <button className=" mx-8 border-2 border-[#767676] bg-[#FF4757] py-4 rounded-2xl w-50 my-5 hover:bg-[#A41622] cursor-pointer text-2xl">
                 Contact Us
               </button>
             </li>
