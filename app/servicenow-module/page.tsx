@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import SnowCard from '@/components/snow-card'
 import snowModuleBannerImage from '@/public/servicenow-page-banner-image-test.png'
@@ -7,7 +9,6 @@ import ContactUsBanner from '@/components/contact-us-banner'
 const servicenowPage = () => {
   return (
     <div>
-
       <div>
       <Image
       src={snowModuleBannerImage}
@@ -24,7 +25,7 @@ const servicenowPage = () => {
          feature3:'Change',
          feature4:'Knowledge',
          feature5:'Request'
-       }}/>
+      }}/>
 
 
      <SnowCard
