@@ -4,6 +4,7 @@ import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import arrowImage from '@/public/snow-card-arrow.png'
+import Link from 'next/link'
 const snowCard = ({data} : {data:any}) => {
 
   const [isOpen,openMobileCard] = useState(false)
@@ -14,7 +15,7 @@ const snowCard = ({data} : {data:any}) => {
     console.log('inside if of component')
   return (   
   <div>
-      <button onClick={handleCard}>
+     
       <div className='bg-[#A07EB9] h-90 w-110 rounded-4xl py-5 mx-auto'>
         <div className="bg-[#1A365D] h-75 w-95 rounded-3xl mx-5 py-3 px-3">
           <div className="bg-white w-30 h-10 text-4xl text-center">{data.heading}</div>
@@ -31,9 +32,18 @@ const snowCard = ({data} : {data:any}) => {
             </div>
           </div>
         </div>
-        <div className="py-3 px-13"> Click Here</div>
+        <div onClick = {handleCard} >
+          <Link href={'/itsm'}>
+           <div className='w-80 content-center'>
+        <div className='flex flex-row justify justify-around'>
+       <div className="py-2 px-13 font-extrabold"> Click Here</div> 
+        <Image src = {arrowImage} alt = 'arrow image' width={50} className='h-6 my-2'/>
+        
+        </div>
       </div>
-      </button>
+      </Link>
+      </div>
+      </div>
     </div>
   )}
   else {

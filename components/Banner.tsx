@@ -10,7 +10,7 @@ const Banner = () => {
 <div className='h-100 w-screen bg-white flex justify-around'>
   <div className="flex flex-col gap-3 py-14">
   <div className='text-black text-6xl text-center font-bold'>
-    Where Services<br />Meet Strategy
+    Where Services<br/>Meet Strategy
   </div>
   <div className='text-black text-2xl text-center'>
     We implement, you innovate

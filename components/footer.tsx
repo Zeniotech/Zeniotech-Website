@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import logo from "@/public/logo.png";
+import Link from 'next/link';
 
 const footer = () => {
   return (
@@ -36,8 +37,8 @@ const footer = () => {
       <li>📍 [New Delhi, Delhi]</li>
       <li>Stay Updated</li>
       <li>Abhinay@zeniotech</li>
-      <li><button className="my-5 py-10 w-100 border-2 rounded-2xl border-[#767676] bg-[#FF4757] hover:bg-[#A41622] cursor-pointer">Contact Us
-      </button>
+      <li> <Link href={'/contact-us'}><button className="my-5 py-10 w-100 border-2 rounded-2xl border-[#767676] bg-[#FF4757] hover:bg-[#A41622] cursor-pointer">Contact Us
+      </button></Link>
       </li>
     </ul>
   </div>
