@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     
 <div className='h-100 w-screen bg-white flex justify-around'>
-  <div className="flex flex-col gap-3 py-14">
+  <div className="flex flex-col gap-3 py-10 px-10">
   <div className='text-black text-6xl text-center font-bold'>
     Where Services<br/>Meet Strategy
   </div>

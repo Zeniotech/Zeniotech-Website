@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const contactUsBanner = () => {
     return (
-        <div className='bg-[#1A365D] h-35 w-screen my-18'>
+        <div className='bg-[#1A365D] h-35 w-screen'>
             <div className='flex justify-around'>
             <div className='flex flex-row'>
                 <div className="text-white py-10 font-bold h-9 w-75 text-center text-2xl">Ready to make magic happen? Let’s chat</div>

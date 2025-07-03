@@ -40,7 +40,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <Header />
         {children}
-        <Footer />
+        <div className=" flex items-end my-18 "> <Footer /></div>
+       
       </body>
     </html>
   );
