@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import HeaderImage from '@/public/hrsd_dashboard.png'
+import HeaderImageTest from '@/components/Servicnow-module-images'
 
 const snowPageHeader = () => {
   return (

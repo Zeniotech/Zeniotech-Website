@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import Ibutton from '@/public/i_button.svg'
 import ServicenowFooter from '@/components/ibutton_servicenow_card'
 
 
